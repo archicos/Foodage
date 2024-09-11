@@ -9,11 +9,20 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import net.sqlcipher.database.SQLiteDatabase
+import net.sqlcipher.database.SupportFactory
 import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
 class DatabaseModule {
+
+    private val bytes = SQLiteDatabase.getBytes("archico".toCharArray())
+    private val supportFactory = SupportFactory(bytes)
+
+    @Provides
+    fun provideRecipeDao(database: RecipeDatabase): RecipeDao =
+        database.recipeDao()
 
     @Singleton
     @Provides
@@ -21,9 +30,7 @@ class DatabaseModule {
         Room.databaseBuilder(
             context,
             RecipeDatabase::class.java, "Recipe.db"
-        ).fallbackToDestructiveMigration().build()
-
-    @Provides
-    fun provideRecipeDao(database: RecipeDatabase): RecipeDao =
-        database.recipeDao()
+        ).fallbackToDestructiveMigration()
+            .openHelperFactory(supportFactory)
+            .build()
 }

@@ -14,6 +14,9 @@ constraintlayout = "2.1.4"
 navigationFragmentKtx = "2.7.7"
 navigationUiKtx = "2.7.7"
 nav = "2.7.7"
+androidDatabaseSqlcipher = "4.5.4"
+coreSplashscreen = "1.0.0"
+leakcanaryAndroid = "2.14"
 
 hiltPlugin ="2.51.1"
 hiltAndroidGradlePlugin = "2.51.1"
@@ -27,6 +30,7 @@ datastorePreferences = "1.1.1"
 okhttp = "4.12.0"
 lifecycle = "2.8.4"
 multidex = "2.0.1"
+sqliteKtx = "2.4.0"
 
 # Libraries
 [libraries]
@@ -40,6 +44,10 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+android-database-sqlcipher = { module = "net.zetetic:android-database-sqlcipher", version.ref = "androidDatabaseSqlcipher" }
+androidx-sqlite-ktx = { module = "androidx.sqlite:sqlite-ktx", version.ref = "sqliteKtx" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanaryAndroid" }
 
 # Navigation
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }

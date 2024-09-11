@@ -25,9 +25,7 @@ dependencies {
     ksp(libs.hilt.compiler)
 
     implementation(libs.androidx.multidex)
-
-    //html parser
+    implementation(libs.androidx.core.splashscreen)
+    debugImplementation(libs.leakcanary.android)
     implementation(libs.jsoup)
-
-    implementation("androidx.core:core-splashscreen:1.0.0")
 }
