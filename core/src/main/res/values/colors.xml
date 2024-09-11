@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#EEDB69</color>
+    <color name="secondary">#73682A</color>
+    <color name="success">#4CAF50</color>
+    <color name="disable">#373737</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#428311</color>
+    <color name="green_200">#A5D6A7</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_700">#388E3C</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#6C6C6C</color>
+    <color name="grey">#535353</color>
+</resources>

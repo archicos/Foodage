@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recipe_photo">Recipe Picture</string>
+    <string name="health">Health</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="cheap">Cheap</string>
+</resources>

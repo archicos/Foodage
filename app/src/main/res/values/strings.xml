@@ -1,0 +1,30 @@
+<resources>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_setting">Setting</string>
+
+    <string name="app_name">FoodAge</string>
+    <string name="something_wrong">Something went wrong…</string>
+    <string name="image_food">Food Image</string>
+    <string name="back_button">Back</string>
+    <string name="favorite_button">Favorite</string>
+    <string name="check_icon">Check</string>
+    <string name="healthy">Healthy</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="vegan">Vegan</string>
+    <string name="cheap">Cheap</string>
+    <string name="dairy_free">Dairy</string>
+    <string name="gluten_free">Gluten</string>
+
+    <string name="pref_key_dark" translatable="false">key_dark_mode</string>
+    <string name="pref_dark_follow_system" translatable="false">follow_system</string>
+    <string name="dark_mode_auto">Automatic</string>
+    <string name="dark_mode_on">Dark Mode</string>
+    <string name="dark_mode_off">Light Mode</string>
+    <string name="pref_dark_on" translatable="false">on</string>
+    <string name="pref_dark_off" translatable="false">off</string>
+    <string name="pref_dark_title">Dark mode</string>
+    <string name="logo_recipe_ori">Logo Recipe Ori</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">Settings</string>
+</resources>

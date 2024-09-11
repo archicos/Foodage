@@ -1,0 +1,4 @@
+<resources>
+    <string name="empty_favorite">Empty Favorite</string>
+    <string name="hello_blank_fragment">Blank fragment</string>
+</resources>
