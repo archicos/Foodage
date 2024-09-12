@@ -17,20 +17,20 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 class DatabaseModule {
 
-    private val bytes = SQLiteDatabase.getBytes("archico".toCharArray())
-    private val supportFactory = SupportFactory(bytes)
-
-    @Provides
-    fun provideRecipeDao(database: RecipeDatabase): RecipeDao =
-        database.recipeDao()
+    val passphrase: ByteArray = SQLiteDatabase.getBytes("archico".toCharArray())
+    val factory = SupportFactory(passphrase)
 
     @Singleton
     @Provides
     fun provideDatabase(@ApplicationContext context: Context): RecipeDatabase =
         Room.databaseBuilder(
             context,
-            RecipeDatabase::class.java, "Recipe.db"
+            RecipeDatabase::class.java, "Resep.db"
         ).fallbackToDestructiveMigration()
-            .openHelperFactory(supportFactory)
+            .openHelperFactory(factory)
             .build()
+
+    @Provides
+    fun provideRecipeDao(database: RecipeDatabase): RecipeDao =
+        database.recipeDao()
 }
